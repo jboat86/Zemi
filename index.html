@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+<main>
+
+    <!-- BMI Calculator card  -->
+   <div class="imput-container">
+    <h2>Welcome to the BMI Calculator!</h2>
+    <h3>Please enter your height and weight</h3>
+
+<!-- guage to indicate BMI category -->
+    <div class="guage-container" id="guage-container">
+         <div class="guage-outer"></div>
+         <div class="guage-ring"></div>
+ <div class="needle" id="needle"></div>
+        <div class="guage-value" id="guage-value">0</div>
+    </div>
+ </div>
+
+    <!-- weight input -->
+     <div class="weight-input">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="weight" id="weight" placeholder="e.g. 160">
+     </div>
+     <div class="height-input">
+        <label for="height">Height (cm)</label>
+        <input type="number" name="height" id="height" placeholder="e.g. 163">
+     </div>
+   
+ 
+
+    <button onclick="runApp()" id ="calculate-bmi">Calculate BMI</button>
+
+    <h2 class="bmi-result" >Your BMI Result:</h2>
+    
+
+ 
+    <!-- <p>"You are clinically underweight."</p>
+    <p>"You are at a healthy weight."</p>
+    <p>"You are clinically overweight."</p>
+    <p>"You are clinically obese."</p> -->
+
+    </main>
+
+    <script src="/js/script.js"></script>
+    <script src="/data/recipes.js"></script>
+    <script src="/js/bmi.js"></script>
+    <script src="/js/bmi-calculator.js"></script>
+    <script src="/js/guage.js"></script>
+</body>
+</html>
