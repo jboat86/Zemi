@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+    <title>Zemi-BMI Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Zemi-BMI Calculator</h1>
+    </header>
+<main>
+    <!--  Nav Start -->
+<section class="nav">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+            <li><a href="#meal-ideas">Meal Ideas</a></li>
+
+        </ul>
+    </nav>
+
+</section>
+<!-- Nav End -->
+
+ <!-- Hero Start -->
+  <!-- Hero End -->
+
+    <!-- About Start -->
+      <!-- About End -->
+
+        <!-- BMI calculator Start -->
+         <!-- BMI calculator End -->
+
+
+
+
+    <!-- BMI Calculator card  -->
+   <div class="imput-container">
+    <h2>Welcome to the BMI Calculator!</h2>
+    <h3>Please enter your height and weight</h3>
+
+<!-- guage to indicate BMI category -->
+    <div class="scale-container" id="scale-container">
+         <div class="scale-track">
+
+            <!-- scale marker -->
+<div class="scale-marker" id="scale-marker"></div> 
+
+            <div class="zone-labels" style = "left: 10%">Underweight</div>
+            <div class="zone-labels" style = "left: 27%">Normal</div>
+            <div class="zone-labels" style = "left: 38%">Overweight</div>
+            <div class="zone-labels" style = "left: 55%">Obese</div>
+            <div class="zone-labels" style = "left: 78%">Morbidly Obese</div>
+        </div>
+        <div class='tick-labels'>
+  <span>18.5</span>
+  <span>22.9</span>
+  <span>23</span>
+  <span>27.5</span>  
+  <span>30</span>  
+</div>
+
+  
+  
+
+
+
+  
+    <!-- weight input -->
+     <div class="weight-input">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="weight" id="weight" placeholder="e.g. 160">
+     </div>
+     <div class="height-input">
+        <label for="height">Height (cm)</label>
+        <input type="number" name="height" id="height" placeholder="e.g. 163">
+     </div>
+   
+
+
+    <button onclick="runApp()" id ="calculate-bmi">Calculate BMI</button>
+    <button onclick="reload()" id ="clear-values">Clear</button>
+
+
+    <h2 class="bmi-result" >Your BMI Result:</h2>
+
+
+
+    
+<!-- Disclaimer -->
+ <div class="disclaimer">
+  <span class="disclaimer-icon">ℹ</span>
+  <p>BMI is a screening tool, not a diagnosis.
+  These results use NHS cutoffs for Black, Asian
+  and minority ethnic adults. Speak to your GP
+  for personalised health advice.</p>
+</div>
+
+ 
+
+    <!--Footer Start  -->
+
+    <footer>
+  <p class="disclaimer-footer">
+    <strong>Medical disclaimer</strong> — Zemi is for
+    informational purposes only and does not
+    constitute medical advice. BMI results use
+    NHS cutoffs for Black, Asian and minority
+    ethnic adults (NICE PH46). Always consult
+    a qualified healthcare professional.
+  </p>
+</footer>
+    <!--Footer End  -->
+    </main>
+
+    <script src="/js/script.js"></script>
+    <script src="/data/recipes.js"></script>
+    <script src="/js/bmi.js"></script>
+</body>
+</html>

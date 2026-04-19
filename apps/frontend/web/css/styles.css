@@ -1,0 +1,100 @@
+/* Design elements */
+
+:root {
+  --bg:          hsl(28, 32%, 41%);
+  --bg-dark:     hsl(28, 34%, 35%);
+  --bg-darker:   hsl(28, 36%, 29%);
+  --gold:        hsl(40, 72%, 69%);
+  --gold-light:  hsl(40, 78%, 75%);
+  --cream:       hsl(36, 58%, 92%);
+  --cream-dark:  hsl(36, 42%, 86%);
+  --text-muted:  hsl(36, 38%, 76%);
+  --green:       hsl(120, 34%, 13%);
+}
+/* Project start */
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 5rem
+}
+
+.input-container p{
+   text-align: center;
+   padding: 0 2rem;
+}
+
+/* Linear BMI guage */
+
+.scale-track{
+    position: relative;
+    height:15px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+    hsl(210,68%,53%) 0% 21%, /* underweight */
+    hsl(153,68%,47%) 21% 38%, /* normal */
+    hsl(45,90%,60%) 38% 55%, /* overweight */
+    hsl(354,72%,58%) 55% 78%, /* obese */
+    hsl(354, 59%, 33%) 78% 100% /* morbidlyobese */
+
+    );
+}
+/* Marker */
+
+#scale-container{
+    position: relative;
+    width: 100%;
+}
+.scale-marker::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -5px; /* sticks above the track */
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+   background-color: var(--green);
+}
+
+.scale-marker{
+    content: '';
+    position: relative;
+    top: -25px;  /* sticks above the track */
+    width: 5px;
+    height: 60px;
+    background-color: var(--green);
+ transition: left 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.scale-marker::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* sticks below the track */
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+.tick-labels{
+    position: absolute;
+    top: 20px;
+   
+}
+
+.zone-labels{
+    position: absolute;
+    top: -45px; 
+   
+}
+
+/* Project end */
