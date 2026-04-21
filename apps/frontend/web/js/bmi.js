@@ -12,8 +12,15 @@ return (bmi);
 const runApp = () => {
     const height = document.getElementById("height").value;
     const weight = document.getElementById("weight").value;
+
+    // to ensure user enters height and weight before calculating bmi
+    if (!height || !weight) {
+        alert("Please enter your height and weight");
+        return;
+    }
+
     const bmiResult = calculateBMI(height, weight);
-    
+
     document.querySelector(".bmi-result").textContent = `Your BMI Result is: ${bmiResult.toFixed(1)}`;
 
     // Move the scale marker
@@ -21,14 +28,6 @@ const runApp = () => {
     const pct = ((clamped - 10) / 40) * 100;
     document.getElementById('scale-marker').style.left = pct + '%';
 };
-
-
-//  to ensure user enters height and weight before calculating bmi
-
-// if (!height|| !weight){
-//         alert("Please enter youir height and weight");
-//         return;
-//     }
 
 //  calculate bmi when the button is clicked
 document.getElementById("calculate-bmi").addEventListener("click", runApp);
@@ -54,5 +53,5 @@ const reload = () => {
     document.getElementById("height").value = "";
     document.getElementById("weight").value = "";
     document.querySelector(".bmi-result").textContent = "Your BMI Result:";
-    document.getElementById('scale-marker').style.left = "50%";
+    document.getElementById('scale-marker').style.left = "0%";
 };

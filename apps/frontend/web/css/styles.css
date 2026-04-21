@@ -1,13 +1,12 @@
 /* Design elements */
 
 :root {
-  --bg:          hsl(28, 32%, 41%);
+   --bg:  hsl(36, 42%, 86%);
   --bg-dark:     hsl(28, 34%, 35%);
   --bg-darker:   hsl(28, 36%, 29%);
   --gold:        hsl(40, 72%, 69%);
   --gold-light:  hsl(40, 78%, 75%);
   --cream:       hsl(36, 58%, 92%);
-  --cream-dark:  hsl(36, 42%, 86%);
   --text-muted:  hsl(36, 38%, 76%);
   --green:       hsl(120, 34%, 13%);
 }
