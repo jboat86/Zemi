@@ -9,7 +9,8 @@ return (bmi);
 
 
  
-const runApp = () => {
+// Make runApp globally accessible for HTML onclick
+window.runApp = () => {
     const height = document.getElementById("height").value;
     const weight = document.getElementById("weight").value;
 
