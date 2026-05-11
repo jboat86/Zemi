@@ -39,7 +39,7 @@ body{
     hsl(153,68%,47%) 21% 38%, /* normal */
     hsl(45,90%,60%) 38% 55%, /* overweight */
     hsl(354,72%,58%) 55% 78%, /* obese */
-    hsl(354, 59%, 33%) 78% 100% /* morbidlyobese */
+    hsl(354, 59%, 33%) 78% 100% /* morbidly obese */
 
     );
 }
