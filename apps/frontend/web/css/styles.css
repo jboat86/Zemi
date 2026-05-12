@@ -1,19 +1,51 @@
 /* Design elements */
 
 :root {
-   --bg:  hsl(36, 42%, 86%);
+    /* Backgrounds */
+   --warm-white: hsl(44 67% 97%);
+   --cream: hsl(38 60% 90%);
+   --menu-dark: hsl(8 75% 13%);
   --bg-dark:     hsl(28, 34%, 35%);
   --bg-darker:   hsl(28, 36%, 29%);
-  --gold:        hsl(40, 72%, 69%);
-  --gold-light:  hsl(40, 78%, 75%);
+
+  /* Gold hues */
+  --gold:        hsl(38, 88%, 41%);
+  --gold-light:  hsl(38, 82%, 52%);
+  --gold-pale:   hsl(38, 70%, 94%);
+
+  /* Earth red */
+  --earth-deep: hsl(8, 72%, 22%);
+  --earth: hsl(10,63%,37%);
+  --earth-light: hsl(14, 57%, 52%);
+
+  /* Forest Green */
+  --forest: hsl(150 58% 20%);
+  --forest-mid: hsl(149 42% 30%);
+  --forest-light: hsl(149 38% 38%);
+
+  /* Neutrals */
+  --ink: hsl(30, 60%, 7%);
+  --charcoal: hsl(28, 55%, 11%);
+  --muted: hsl(34, 26%, 37%);
   --cream:       hsl(36, 58%, 92%);
   --text-muted:  hsl(36, 38%, 76%);
   --green:       hsl(120, 34%, 13%);
+
+/* kente  */
+
+--red: hsl(10 63% 37%);
+--yellow: hsl(38 88% 41%);
+--green: hsl(150 58% 20%);
+--black: hsl(0, 0%, 8%);
 }
+
+
+/* Typography */
+
 /* Project start */
 body{
     font-family: Arial, sans-serif;
-    background-color: var(--bg);
+    background-color: var(--gold-pale);
     font-size: 2.5rem;
     text-align: center;
     align-items: center;
@@ -25,6 +57,45 @@ body{
    text-align: center;
    padding: 0 2rem;
 }
+
+/* Nav start */
+
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 0.25em;
+    left: 1.5em;
+}
+
+.zemi-gold{
+    color: var(--gold);
+}
+
+.close-icon svg{
+    font-size: 1.5rem;
+    color: var(--menu-dark);
+    background: none;
+}
+
+.overlay{
+    background-color: var(--menu-dark);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}   
+
+.overlay nav u a{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+
+}
+
+/* Nav end */
 
 /* Linear BMI guage */
 
