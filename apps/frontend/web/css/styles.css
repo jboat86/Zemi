@@ -47,10 +47,10 @@ body{
     font-family: Arial, sans-serif;
     background-color: var(--gold-pale);
     font-size: 2.5rem;
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
     margin: 0;
-    padding: 1rem 5rem
+    /* padding: 1rem 5rem */
 }
 
 .input-container p{
@@ -58,26 +58,62 @@ body{
    padding: 0 2rem;
 }
 
+header {
+    
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2em;
+    margin-left: 1.25em;
+   
+}
+svg{
+    height: 3rem;
+}
+
+
 /* Nav start */
 
 
 .logo{
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 0;
+    /* margin: 0;
     position: absolute;
     top: 0.25em;
-    left: 1.5em;
+    left: 1.5em; */
 }
 
 .zemi-gold{
     color: var(--gold);
 }
 
-.close-icon svg{
+.desktop-nav{
+    display: none;
+}
+
+.menu-btn, .close-btn{
+    background: var(--charcoal);
+    border: 0.5px solid var(--cream);
+    border-radius: 0.75rem;
+    color: var(--gold-pale);
+    cursor: pointer;
+}
+
+.mobile-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.menu-btn{
+    color: var(--gold-pale);
+    /* display: flex;
+    flex-direction: end; */
+   
+}
+.close-icon{
     font-size: 1.5rem;
-    color: var(--menu-dark);
-    background: none;
+    background: var(--charcoal);
 }
 
 .overlay{
@@ -88,11 +124,18 @@ body{
     z-index: 1000;
 }   
 
-.overlay nav u a{
+
+
+.overlay ul li {
     list-style: none;
     display: flex;
-    gap: 2em;
+    align-items: center;
+    justify-content: center;
 
+}
+.overlay ul li a {
+    text-decoration: none;
+    color: var(--gold-pale);
 }
 
 /* Nav end */
