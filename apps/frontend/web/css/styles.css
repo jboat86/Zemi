@@ -43,12 +43,20 @@
 /* Typography */
 
 /* Project start */
+/* header {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2em;
+    margin-left: 0;
+} */
+
 body{
     font-family: Arial, sans-serif;
     background-color: var(--gold-pale);
     font-size: 2.5rem;
-    /* text-align: center;
-    align-items: center; */
+    text-align: center;
+    align-items: center;
     margin: 0;
     /* padding: 1rem 5rem */
 }
@@ -58,14 +66,7 @@ body{
    padding: 0 2rem;
 }
 
-header {
-    
-    width: 100%;
-    height: 4rem;
-    margin-bottom: 2em;
-    margin-left: 1.25em;
-   
-}
+
 svg{
     height: 3rem;
 }
@@ -127,15 +128,64 @@ svg{
 
 
 .overlay ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+font-size: 1.75rem;
+ list-style: none; 
+    
 
 }
 .overlay ul li a {
-    text-decoration: none;
-    color: var(--gold-pale);
+text-decoration: none;
+  
+color: var(--gold-pale);
+ display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.overlay .link{
+   display: flex;
+   color: var(--cream);
+   background: none;
+   border: none;
+   gap: 0.5rem;
+   margin: 1.75rem 1rem;
+
+}
+.overlay .link::before{
+    content: "";
+    /* border: 1px solid var(--cream); */
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    filter: brightness(0) invert(1);
+    background-color: transparent;
+}
+
+.link-dash::before{
+    background-image: url(/apps/frontend/web/assets/icons/grid.svg);
+}
+.link-bmi::before{
+    background-image: url(/apps/frontend/web/assets/icons/calculator.svg);
+}
+.link-meal::before{
+    background-image: url(/apps/frontend/web/assets/icons/cutlery.svg);
+}
+.link-inspo::before{
+    background-image: url(/apps/frontend/web/assets/icons/heart.svg);
+}
+.link-progress::before{
+    background-image: url(/apps/frontend/web/assets/icons/progress.svg);
+}
+.link-library::before{
+    background-image: url(/apps/frontend/web/assets/icons/book.svg);
+}
+.link-settings::before{
+    background-image: url(/apps/frontend/web/assets/icons/settings.svg);
+}
+hr{
+    border-top: 1px solid var(--cream);
+    width: 100%;
+    margin: 1.5rem auto;
 }
 
 /* Nav end */
