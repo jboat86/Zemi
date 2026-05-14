@@ -132,6 +132,7 @@ svg{
     position: absolute;
     top: 0;
     left: 0;
+   padding-bottom: 5rem;
     z-index: 1000;
 }   
 
@@ -168,6 +169,7 @@ color: var(--gold-pale);
 display: flex;
 align-items: center;
 justify-content: flex-start;
+padding-top: 1.25em;
 }
 
 .overlay .link{
@@ -210,6 +212,8 @@ justify-content: flex-start;
 .link-settings::before{
     background-image: url(/apps/frontend/web/assets/icons/settings.svg);
 }
+
+
 
 hr{
     border: 0.5px solid var(--gold-pale-transparent);
