@@ -7,38 +7,26 @@
     <title>Zemi-BMI Calculator</title>
 </head>
 <body>
+
+
      <!--  Nav Start -->
-    <header>
-        <h1 class="logo"><span>Ze</span><span class="zemi-gold">mi</span></h1>
-
-        <section class="desktop-nav">
-    <nav>
-        <ul>
-            <li><a href="#home">Zemi</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#bmi-calculator">BMI Calculator</a></li>
-            <li><a href="#meal-ideas">Meal Ideas</a></li>
-
-        </ul>
-    </nav>
-
-</section>
+    <header> 
 
       <!-- Mobile Nav start -->
      <nav>
-  
-    <div class="mobile-nav">
-       
-      
-        <div class="overlay">
 
-<div class="btn-wrapper">
+    <div class="mobile-nav">
+
+ <h1 class="logo"><span class="zemi-cream">Ze</span><span class="zemi-gold">mi</span></h1>
+
+       <div class="btn-wrapper">
 
  <button class="menu-btn">
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
+
  </button>
 
 
@@ -49,10 +37,14 @@
 
  </button>
  </div>
+      
+        <div class="overlay">
+
+
 
   <div class="overlay-section-1">
             
-            <h3 class="overlay-logo"><span>Ze</span><span class="zemi-gold">mi</span></h3>
+            <h3 class="overlay-logo"><span class="zemi-cream">Ze</span><span class="zemi-gold">mi</span></h3>
             <h6 class="overlay-subtitle">wellness . heritage . health</h6>
         </div>
 
@@ -72,6 +64,17 @@
         </div>
     </nav>
     <!-- Mobile Nav end -->
+
+    <!-- Desktop Nav start -->
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#home">Zemi</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+            <li><a href="#meal-ideas">Meal Ideas</a></li>
+        </ul>
+    </nav>
+    <!-- Desktop Nav end -->
     </header>
 <main>
 
@@ -99,7 +102,7 @@
         <h2>What is Zemi?</h2>
         <p>Zemi is a simple BMI calculator that helps you determine your Body Mass Index and provide meal suggestions 
             based on your BMI results. Cut-offs for BMI categories are baseed on NHS guidelines for Black African and Caribbean
-            adults and South Asian adults, which differ from the standard BMI categories.
+            adults, which differ from the standard BMI categories.
         </p>
 
      </section>
@@ -107,11 +110,55 @@
 
         <!-- BMI calculator Start -->
            <!-- BMI Calculator card  -->
-   <div class="imput-container">
+  <section class="bmi-input">
     <h3>Please enter your height and weight</h3>
 
+ <div class="input-container">
+
+
+<form id="bmi-form">
+      <div class="weight-input">
+          <label for="weight">Weight (kg)</label>
+          <input type="number" name="weight" id="weight" placeholder="e.g. 160">
+      </div>
+      <div class="height-input">
+          <label for="height">Height (cm)</label>
+          <input type="number" name="height" id="height" placeholder="e.g. 163">
+      </div>
+      <div class="age-input">
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" placeholder="e.g. 30">
+      </div>
+      <div class="sex-input">
+          <label for="sex">Sex</label>
+          <select name="sex" id="sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+          </select>
+      </div>
+</form>
+
+
+
+
+
+  <!-- <div class="weight-input">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="weight" id="weight" placeholder="e.g. 160">
+     </div>
+     <div class="height-input">
+        <label for="height">Height (cm)</label>
+        <input type="number" name="height" id="height" placeholder="e.g. 163">
+     </div>
+   
+
+
+    <button onclick="runApp()" id ="calculate-bmi">Calculate BMI</button>
+    <button onclick="reload()" id ="clear-values">Clear</button> -->
+   
+
 <!-- guage to indicate BMI category -->
-    <div class="scale-container" id="scale-container">
+    <section class="scale-container" id="scale-container">
          <div class="scale-track">
 
             <!-- scale marker -->
@@ -131,23 +178,12 @@
   <span>30</span>  
 </div>
     </div>  
-    <!-- weight input -->
-     <div class="weight-input">
-        <label for="weight">Weight (kg)</label>
-        <input type="number" name="weight" id="weight" placeholder="e.g. 160">
-     </div>
-     <div class="height-input">
-        <label for="height">Height (cm)</label>
-        <input type="number" name="height" id="height" placeholder="e.g. 163">
-     </div>
-   
-
-
-    <button onclick="runApp()" id ="calculate-bmi">Calculate BMI</button>
-    <button onclick="reload()" id ="clear-values">Clear</button>
+    
 
 
     <h2 class="bmi-result" >Your BMI Result is:</h2>
+
+      </section>
 
          <!-- BMI calculator End -->
 

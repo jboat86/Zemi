@@ -2,6 +2,7 @@
 
 :root {
     /* Backgrounds */
+   --white: hsl(0, 0%, 100%);
    --warm-white: hsl(44 67% 97%);
    --cream: hsl(38 60% 90%);
    --menu-dark: hsl(8 75% 13%);
@@ -66,24 +67,48 @@ body{
     /* padding: 1rem 5rem */
 }
 
+.logo{
+    font-size: 2.5rem;
+     padding: 0.5em;
+    font-weight: bold;
+}
+
 .input-container p{
    text-align: center;
-   padding: 0 2rem;
+   padding: 1em 2em;
 }
+
 svg{
     width: 3.75rem;
     height: 3.75rem;
+    border: solid 3px green;
+    color: var(--gold-pale);
+    background: var(--bg-darker);
+    border-radius: 10px;
 }
 /* Nav start */
 
+.mobile-nav{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    top: 0;
+    background-color: var(--earth-deep);
+   
+}
 
-.logo{
+.desktop-nav{
+    display: none;
+}
+
+
+.overlay-logo{
     font-size: 2.5rem;
     font-weight: bold;
-    /* margin: 0;
-    position: absolute;
-    top: 0.25em;
-    left: 1.5em; */
+}
+
+.zemi-cream{
+    color: var(--cream);
 }
 
 .zemi-gold{
@@ -102,11 +127,7 @@ svg{
     cursor: pointer;
 }
 
-.mobile-nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-}
+
 .btn-wrapper{
     display: flex;
     gap: 0.5rem;
@@ -120,6 +141,7 @@ svg{
 .menu-btn{
     color: var(--gold-pale);  
 }
+
 .close-icon{
     font-size: 1.5rem;
     background: var(--charcoal);
@@ -127,8 +149,8 @@ svg{
 
 .overlay{
     background-color: var(--earth);
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -139,12 +161,17 @@ svg{
 .overlay-section-1{
     padding: 0.5rem 1rem;
     margin: 0;
+    height: 20vh;
     background-color: var(--earth-deep);
 }
+
+
 .overlay-logo{
     margin: 0;
     padding-bottom: 0.75rem;
 }
+
+
 .overlay-subtitle{
 color: var(--gold-light);
 font-style: italic;
@@ -222,6 +249,20 @@ hr{
 }
 /* Nav end */
 
+/* hero start */
+.hero{
+    margin-top: 3.5em;
+}
+
+#bmi-form{
+    width: 80%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.75em;
+    margin: 0 auto;
+}
+
 /* Linear BMI guage */
 
 .scale-track{
@@ -291,5 +332,23 @@ hr{
     top: -45px; 
    
 }
+
+/* screen sizes-mobile first approach */
+
+/* Mobile first (min-width builds up) */
+@media (min-width: 640px)  {
+
+    .overlay{
+        display: none;
+    }
+
+    
+
+}/* sm  */
+@media (min-width: 768px)  { } /* md  */ 
+@media (min-width: 1024px) {}  /* lg  */ 
+
+
+
 
 /* Project end */
